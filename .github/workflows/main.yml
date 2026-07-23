@@ -4,7 +4,7 @@ jobs:
   system-info: 
     runs-on: ubuntu-latest
     steps:
-    - run: date \n 
+    - run: date
   disk-info:
     runs-on: ubuntu-latest
     steps:
