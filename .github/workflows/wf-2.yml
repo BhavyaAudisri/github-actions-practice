@@ -3,10 +3,10 @@ on: workflow_dispatch
 jobs:
   job-1:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo "this is system information"
-        - run: echo "date"
-        - run: echo "free -h"
-        - run: echo "du -h"
-        - run: echo "hostname"
-        - run: echo "whoami"
+    steps:
+      - run: echo "this is system information"
+      - run: echo "date"
+      - run: echo "free -h"
+      - run: echo "du -h"
+      - run: echo "hostname"
+      - run: echo "whoami"
