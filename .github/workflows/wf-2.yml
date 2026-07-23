@@ -2,11 +2,13 @@ name: multiple-jobs
 on: workflow_dispatch
 jobs:
   job-1:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-      - run: echo "this is system information"
-      - run: date
-      - run: free -h
-      - run: du -h
-      - run: hostname
-      - run: whoami
+      - name: system-info
+        run: |
+         echo "this is system information"
+         date
+         whoami
+         uname -a
+         free -h
+         du -h
