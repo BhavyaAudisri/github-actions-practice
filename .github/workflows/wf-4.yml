@@ -1,19 +1,22 @@
 name: dependency workflow
 on: push
 jobs:
-runs-on: ubuntu-latest
   code:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "this is our source code"
   build:
+    runs-on: ubuntu-latest
     needs: code
     steps:
       - run: echo "this is building stage"
   test:
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - run: echo "this is testing stage"
   deploy:
-   needs: test
+    runs-on: ubuntu-latest
+    needs: test
     steps:
-      - run: echo "this is deploying ...."
+    - run: echo "this is deploying ...."
