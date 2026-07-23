@@ -1,0 +1,11 @@
+name: multi-job
+on: push
+jobs:
+  system-info: 
+    runs-on: ubuntu-latest
+    steps:
+    - run: date \n 
+  disk-info:
+    runs-on: ubuntu-latest
+    steps:
+    - run: du -h    
