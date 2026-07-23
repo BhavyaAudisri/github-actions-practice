@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is system information"
-      - run: echo "$date"
-      - run: echo "$free -h"
-      - run: echo "$du -h"
-      - run: echo "$hostname"
-      - run: echo "$whoami"
+      - run: date
+      - run: free -h
+      - run: du -h
+      - run: hostname
+      - run: whoami
