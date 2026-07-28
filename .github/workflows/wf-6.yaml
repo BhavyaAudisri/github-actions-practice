@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print env using inputs
-        run: echo " selected environment is ${{inputs.environment}}
+        run: echo " selected environment is ${{inputs.environment}} "
