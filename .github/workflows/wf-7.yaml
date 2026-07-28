@@ -1,0 +1,19 @@
+name: inputs with choice
+on: 
+  workflow_dispatch:
+   inputs:
+      environment:
+        description: select environment
+        required: true
+        type: choice
+        options:
+        - dev
+        - test
+        - uat
+        - prod
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print environment using inputs and choice
+        run: echo " selected environment is ${{ inputs.environment }} "
