@@ -7,4 +7,4 @@ jobs:
       - name: using context variables
         run: |
           echo " print the github username ${{github.actor}} "
-          echo " print the repository name ${{github.action_repository}} "
+          echo " print the repository name ${{github.repository}} "
