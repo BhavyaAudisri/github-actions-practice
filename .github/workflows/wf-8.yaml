@@ -1,0 +1,23 @@
+name: print tags using artifacts
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: select environment
+        required: true
+        type: choice
+        options:
+          - dev
+          - test
+          - uat
+          - prod
+      artifact_tag:
+        description: select git tag to deploy
+        required: true
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using tags
+        run: echo " select git tag is ${{ inputs.artifact_tag}} and environment is ${{ inputs.environment }} "
+    
