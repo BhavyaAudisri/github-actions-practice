@@ -8,3 +8,5 @@ jobs:
         run: |
           echo " print the github username ${{github.actor}} "
           echo " print the repository name ${{github.repository}} "
+          echo " ${{github.repositoryUrl}} "
+          echo " ${{github.repository_owner}} "
