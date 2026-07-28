@@ -1,0 +1,13 @@
+name: inputs and parameters
+on: workflow_dispatch
+  inputs:
+    environment:
+      description: "select environment"
+      required: true
+      default: dev
+jobs:
+  inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env using inputs
+        run: echo " selected environment is ${{inputs.environment}}
