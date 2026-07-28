@@ -1,0 +1,10 @@
+name: context variables
+on: workflow_dispatch
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using context variables
+        run: |
+          echo " print the github username ${{github.actor}} "
+          echo " print the repository name ${{ github.action_repository}} "
