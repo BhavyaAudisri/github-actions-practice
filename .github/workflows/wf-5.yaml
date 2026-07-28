@@ -1,0 +1,10 @@
+name: environment variables
+on: workflow_dispatch
+env:
+  APP_ENV: "DEV"
+jobs:
+  test-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the environment
+        run: echo " we are working in the environment called $APP_ENV ....."
