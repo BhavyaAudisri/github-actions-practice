@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: build
         id: step1
-        run: echo " message=hello my name is bhavya " >> $GITHUB_OUTPUT
+        run: echo "message=hello my name is bhavya " >> $GITHUB_OUTPUT
       - name: deploy
         run: echo " OUTPUT IS ${{steps.step1.outputs.message}} "
