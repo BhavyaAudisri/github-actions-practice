@@ -1,0 +1,12 @@
+name: inputs
+on: push
+jobs:
+  input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print username
+        run: | 
+          echo " this repo username is ${{github.actor}} "
+          echo " this repo name is ${{github.repository}}"
+      - name: print all env variables
+        run: echo "${{toJson(github)}}"            
