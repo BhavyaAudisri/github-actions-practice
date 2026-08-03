@@ -1,0 +1,6 @@
+name: calling reusable workflow
+on:
+  push:
+jobs:
+  test-1:
+    uses: BhavyaAudisri/github-actions/.github/workflows/github-actions.yaml@feature
