@@ -3,4 +3,4 @@ on:
   push:
 jobs:
   test-1:
-    uses: BhavyaAudisri/github-actions/.github/workflows/github-actions.yaml@feature
+    uses: BhavyaAudisri/github-actions/.github/workflows/reusable.yaml@feature
